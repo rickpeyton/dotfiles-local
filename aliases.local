@@ -1,0 +1,8 @@
+alias dr="cd ~/IdeaProjects && ll"
+
+# Commands to quickly create UUIDs/GUIDs
+alias uuid="python -c 'import uuid; print str(uuid.uuid4())'"
+alias guid="python -c 'import uuid; print str(uuid.uuid4())'"
+
+# Speed up git commits
+alias gam="git add -A && git commit -m"

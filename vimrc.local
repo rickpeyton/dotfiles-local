@@ -1,0 +1,29 @@
+let mapleader = ","
+
+" Escape using jj
+inoremap jj <ESC>
+
+" Make ; do the same thing as :
+nnoremap ; :
+
+set cursorline    " I like seeing a visual queue for the line I am on
+
+" Improved searching
+set hlsearch      " highlight all search matches
+" Mapping to clear the highlighting of previous search pattern matches
+map <leader>h :nohlsearch<cr>
+nnoremap <leader><space> :noh<cr>
+set ignorecase    " Case insensitive pattern searching
+set smartcase     " Overrides ignorecase if pattern contains upcase
+
+set relativenumber
+
+" Quicker window movement
+nnoremap <leader>w <C-w>v<C-w>l " ,w opens window to the right
+
+" Color scheme
+set background=dark
+colorscheme solarized
+
+" spaces indicator
+let g:indentLine_color_gui = '#0c3642'
