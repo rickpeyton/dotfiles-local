@@ -6,3 +6,6 @@ alias guid="python -c 'import uuid; print str(uuid.uuid4())'"
 
 # Speed up git commits
 alias gam="git add -A && git commit -m"
+
+# Pull Upstream
+alias gup="git fetch upstream && git rebase upstream/master"
