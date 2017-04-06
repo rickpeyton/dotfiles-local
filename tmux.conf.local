@@ -31,3 +31,16 @@ bind -n C-h run "$is_view_vim_diff && tmux send-keys C-h || tmux select-pane -L"
 bind -n C-j run "$is_view_vim_diff && tmux send-keys C-j || tmux select-pane -D"
 bind -n C-k run "$is_view_vim_diff && tmux send-keys C-k || tmux select-pane -U"
 bind -n C-l run "$is_view_vim_diff && tmux send-keys C-l || tmux select-pane -R"
+
+
+# -----------------------------------------------------------------------------
+# Vim visual selection and yank when in copy mode
+# -----------------------------------------------------------------------------
+bind Space copy-mode
+bind C-Space copy-mode
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-pipe "pbcopy"
+bind -t vi-copy Escape cancel
+
+# Add support for copy paste when using Sierra
+set-option -g default-command "reattach-to-user-namespace -l zsh"
