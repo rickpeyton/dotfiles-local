@@ -42,5 +42,10 @@ bind -t vi-copy v begin-selection
 bind -t vi-copy y copy-pipe "pbcopy"
 bind -t vi-copy Escape cancel
 
-# Add support for copy paste when using Sierra
-set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# -----------------------------------------------------------------------------
+# Sierra Copy Paste Issues Solution Per
+# https://github.com/tmux/tmux/issues/543#issuecomment-248980734
+# -----------------------------------------------------------------------------
+set -g default-shell $SHELL 
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
