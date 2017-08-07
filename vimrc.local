@@ -22,7 +22,7 @@ set relativenumber
 nnoremap <leader>w <C-w>v<C-w>l " ,w opens window to the right
 
 " Color scheme
-set background=light
+set background=dark
 colorscheme solarized
 
 " spaces indicator
