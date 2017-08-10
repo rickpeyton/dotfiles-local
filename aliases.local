@@ -14,5 +14,5 @@ alias apptoken="'/Users/rick.peyton/.rbenv/versions/2.3.1/bin/ruby' '/Users/rick
 
 # Docker
 alias dcr="docker-compose run --rm web"
-# alias dcu="docker-compose up -d --remove-orphans"
-alias dcu="docker-compose up --remove-orphans"
+alias dcs="docker-compose stop"
+alias dcu="docker-compose up -d --remove-orphans"
