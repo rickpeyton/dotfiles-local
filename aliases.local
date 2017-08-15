@@ -14,6 +14,7 @@ alias gup="git fetch upstream && git rebase upstream/master"
 alias apptoken="'/Users/rick.peyton/.rbenv/versions/2.3.1/bin/ruby' '/Users/rick.peyton/ruby/app_token/get_app_token.rb'"
 
 # Docker
-alias dcr="docker-compose run --rm web"
-alias dcs="docker-compose stop"
-alias dcu="docker-compose up -d --remove-orphans"
+alias runapp="docker-compose run --rm app"
+alias stopall="docker-compose stop"
+alias upapp="docker-compose up -d --remove-orphans app"
+alias upall="docker-compose up -d --remove-orphans"
