@@ -1,2 +1,6 @@
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
+  . ~/.config/exercism/exercism_completion.zsh
+fi

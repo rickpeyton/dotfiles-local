@@ -17,6 +17,4 @@ alias upapp="docker-compose up -d --remove-orphans app"
 alias upall="docker-compose up -d --remove-orphans"
 
 # Ramsey Docker Images
-alias awsauth1="aws-adfs login --adfs-host=rs.peace.daveramsey.com --region=us-east-1"
-alias awsauth2="eval $(aws ecr get-login --registry-ids 674907502808 --region us-east-1 --no-include-email)"
-alias awsget="docker pull 674907502808.dkr.ecr.us-east-1.amazonaws.com/ws-docker-ruby24:7"
+alias awsauth="cat ~/dotfiles-local/aws-ecr.txt"
