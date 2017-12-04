@@ -6,3 +6,5 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 UnPlug 'ctrlp.vim'
 
+Plug 'elmcast/elm-vim'
+
