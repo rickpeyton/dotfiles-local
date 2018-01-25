@@ -6,3 +6,5 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
